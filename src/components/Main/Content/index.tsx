@@ -1,9 +1,10 @@
 import React from 'react'
+import './index.css'
 import { Card } from '../Card'
 
 export const Content = () => {
   return (
-    <section className='overflow-y-scroll py-2 px-6 h-auto max-h-[calc(100%-4rem)]  grid gap-10'>
+    <section className='scrollbar overflow-y-scroll py-2 px-6 h-auto max-h-[calc(100%-4rem)] grid gap-10'>
         <div className='flex flex-col gap-4'>
             <h3 className='font-bold text-2xl hover:underline hover:decoration-2 cursor-pointer'>
                 Reproduzido recentemente

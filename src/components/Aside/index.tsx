@@ -5,7 +5,7 @@ import { Playlist } from './Playlist'
 
 export const Aside = () => {
   return (
-    <aside className='row-span-5 grid grid-rows-5 gap-2'>
+    <aside className='row-span-6 grid grid-rows-5 gap-2'>
         <Navbar />
         <Library />
     </aside>

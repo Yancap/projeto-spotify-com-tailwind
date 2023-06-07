@@ -15,7 +15,7 @@ export const Card = ({type, title, description}: CardProps) => {
             <img src="" alt="" />
             {type === "music" && 
             <div className='invisible  box-content bg-green-500 rounded-full grid place-content-center p-3.5 w-min  shadow-md shadow-zinc-700/50 transition-all absolute bottom-0 right-1.5 group-hover:visible group-hover:bottom-1.5'>
-                <FontAwesomeIcon icon={faPlay} className='text-black h-5 w-5'/>
+                <FontAwesomeIcon icon={faPlay} className='text-black h-5 w-5 ml-0.5'/>
             </div>
             }
         </div>
