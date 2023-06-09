@@ -6,13 +6,14 @@ interface CardProps {
     type: "music" | "podcast";
     title: string;
     description: string;
+    image: string;
 }
 
-export const Card = ({type, title, description}: CardProps) => {
+export const Card = ({type, title, description, image}: CardProps) => {
   return (
     <div className='flex flex-col rounded-lg h-72 w-52 bg-zinc-900 p-4 cursor-pointer transition-colors duration-500 hover:bg-zinc-800/60 group'>
-        <div className='w-full h-3/4 bg-yellow-400 rounded-lg shadow-lg shadow-zinc-950/60 relative'>
-            <img src="" alt="" />
+        <div className='w-full h-3/4 rounded-lg shadow-lg shadow-zinc-950/60 relative overflow-hidden'>
+            <img src={image} alt="" />
             {type === "music" && 
             <div className='invisible  box-content bg-green-500 rounded-full grid place-content-center p-3.5 w-min  shadow-md shadow-zinc-700/50 transition-all absolute bottom-0 right-1.5 group-hover:visible group-hover:bottom-1.5'>
                 <FontAwesomeIcon icon={faPlay} className='text-black h-5 w-5 ml-0.5'/>
