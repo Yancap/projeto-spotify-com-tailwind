@@ -2,13 +2,14 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faCaretDown, faMagnifyingGlass, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Playlist } from '../Playlist'
+import Image from 'next/image'
 
 export const Library = () => {
   return (
     <nav className='flex flex-col gap-4 bg-zinc-900/60 rounded-lg px-2 py-4 row-span-4'>
         <div className='flex justify-between items-center px-2'>
           <div className='flex gap-4 text-zinc-400 hover:text-zinc-100 cursor-pointer'>
-            <i>///</i>
+            <Image src='/library.svg' alt='library' height={16} width={16} />
             <strong>A sua biblioteca</strong>
           </div>
           <div className='flex gap-3 items-center'>
